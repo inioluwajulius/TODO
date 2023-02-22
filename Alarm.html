@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm</title>
+</head>
+<body>
+    <input type="text" name="" id="hh" placeholder="00">
+    <input type="text" name="" id="min" placeholder="00">
+    <input type="text" name="" id="sec" placeholder="00">
+    <input type="text" name="" id="millSec" placeholder="00">
+    <button onclick="startAlarm()">START</button>
+    <script>
+        const startAlarm = () => {
+            millSec.value >0
+            millSec.value--
+            setTimeout(startAlarm, 100)
+        }
+    </script>
+</body>
+</html>
